@@ -1,0 +1,122 @@
+@import "normalize.css"
+@import "evo.styl"
+
+body
+    background $color00 url('bg/swirl_pattern_d.png') repeat
+
+a
+	color $color07
+	text-decoration none
+	display block
+	float none
+
+ul
+    list-style none
+    padding 6px 4px 8px 6px
+    margin 0
+    width 180px
+    float left
+    clear none
+	& li a:empty:after
+		content "██████"
+		color rgba(0,0,0,0)
+		cursor default
+
+input[type="submit"]
+    display none
+
+input
+	background-color $color00
+	color $color07
+	border none
+	font-family $font
+	padding 0
+
+#container
+    background-color $color00
+    font-family $font
+    font-size 13px
+    width 585px
+    height 290px
+    padding 5px
+    border 6px solid $color08
+    color $color08
+    & #links
+        margin 7px 0 0 2px
+        font-size 12px
+        height 172px
+        width 570px
+    & .PS1
+        padding 5px 0 0 5px
+        display block
+        width 585px
+        & #search
+            float left
+            margin 0 0 0 6px
+            padding 0
+    & .PS1:nth-of-type(1)::after
+        content " about -" + $user
+        margin 0 0 0 6px
+        font-size 13px
+        color #B8D68C
+
+.at::before
+    content "" + $user
+    color $color02
+
+.at
+    float left
+    color $color15
+
+.at::after
+    content "" + $host
+    color $color12
+
+.amper::before
+    content ":"
+    color $color15
+
+.amper
+    float left
+    color $color05
+
+.amper::after
+    content " >>"
+    color $color01
+
+.main li
+    color $color01
+    & a:hover
+        color $color09
+        transition color 1s
+
+.utils li
+    color $color02
+    & a:hover
+        color $color10
+        transition color 1s
+
+.gfx li
+    color $color03
+    & a:hover
+        color $color11
+        transition color 1s
+
+.lit li
+    color $color04
+    & a:hover
+        color $color12
+        transition color 1s
+
+.forums li
+    color $color05
+    & a:hover
+        color $color13
+        transition color 1s
+
+.bits li
+    color $color06
+    & a:hover
+        color $color14
+        transition color 1s
+

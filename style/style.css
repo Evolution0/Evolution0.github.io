@@ -1,0 +1,131 @@
+@import "normalize.css";
+body {
+  background: #36393b url("bg/swirl_pattern_d.png") repeat;
+}
+a {
+  color: #e8f3f8;
+  text-decoration: none;
+  display: block;
+  float: none;
+}
+ul {
+  list-style: none;
+  padding: 6px 4px 8px 6px;
+  margin: 0;
+  width: 180px;
+  float: left;
+  clear: none;
+}
+li a:empty:after {
+  content: "██████";
+  color: rgba(0,0,0,0);
+  cursor: default;
+}
+input[type="submit"] {
+  display: none;
+}
+input {
+  background-color: #36393b;
+  color: #e8f3f8;
+  border: none;
+  font-family: "Droid Sans Mono", "Lucida Console", Monaco, monospace;
+  padding: 0;
+}
+#container {
+  background-color: #36393b;
+  font-family: "Droid Sans Mono", "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+  width: 585px;
+  height: 290px;
+  padding: 5px;
+  border: 6px solid #45484b;
+  color: #45484b;
+}
+#container #links {
+  margin: 7px 0 0 2px;
+  font-size: 12px;
+  height: 172px;
+  width: 570px;
+}
+#container .PS1 {
+  padding: 5px 0 0 5px;
+  display: block;
+  width: 585px;
+}
+#container .PS1 #search {
+  float: left;
+  margin: 0 0 0 6px;
+  padding: 0;
+}
+#container .PS1:nth-of-type(1)::after {
+  content: ' about -evo';
+  margin: 0 0 0 6px;
+  font-size: 13px;
+  color: #b8d68c;
+}
+.at::before {
+  content: 'evo';
+  color: #8fc383;
+}
+.at {
+  float: left;
+  color: #dbe6ec;
+}
+.at::after {
+  content: 'nemui';
+  color: #4e9fb1;
+}
+.amper::before {
+  content: ":";
+  color: #dbe6ec;
+}
+.amper {
+  float: left;
+  color: #827085;
+}
+.amper::after {
+  content: " >>";
+  color: #d65c56;
+}
+.main li {
+  color: #d65c56;
+}
+.main li a:hover {
+  color: #823c3c;
+  transition: color 1s;
+}
+.utils li {
+  color: #8fc383;
+}
+.utils li a:hover {
+  color: #cee3a2;
+  transition: color 1s;
+}
+.gfx li {
+  color: #fcd036;
+}
+.gfx li a:hover {
+  color: #e3ad40;
+  transition: color 1s;
+}
+.lit li {
+  color: #45ada8;
+}
+.lit li a:hover {
+  color: #4e9fb1;
+  transition: color 1s;
+}
+.forums li {
+  color: #827085;
+}
+.forums li a:hover {
+  color: #4e395d;
+  transition: color 1s;
+}
+.bits li {
+  color: #a1d4d8;
+}
+.bits li a:hover {
+  color: #448792;
+  transition: color 1s;
+}
